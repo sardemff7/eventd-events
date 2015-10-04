@@ -1,0 +1,80 @@
+# French translations for eventd-events package.
+# Copyright (C) 2013 Quentin "Sardem FF7" Glidic
+# This file is distributed under the same license as the eventd-events package.
+# Quentin "Sardem FF7" Glidic <sardemff7@eventd.org>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: eventd 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-25 11:35+0100\n"
+"PO-Revision-Date: 2013-04-26 18:14+0200\n"
+"Last-Translator: Quentin \"Sardem FF7\" Glidic <>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../chat/chat.action.in.h:1
+msgid "[${channel}] ${buddy-name}"
+msgstr ""
+
+#: ../chat/chat.action.in.h:2 ../im/im.action.in.h:2
+msgid "“${message}”"
+msgstr "« ${message} »"
+
+#: ../im/im.action.in.h:1 ../presence/presence.action.in.h:1
+msgid "${buddy-name}"
+msgstr ""
+
+#: ../presence/presence-away.action.in.h:1
+msgid "went away"
+msgstr "est parti(e)"
+
+#: ../presence/presence-away-message.action.in.h:1
+msgid "${buddy-name} went away"
+msgstr "${buddy-name} est parti(e)"
+
+#: ../presence/presence-away-message.action.in.h:2
+#: ../presence/presence-back-message.action.in.h:2
+#: ../presence/presence.action.in.h:2
+msgid "${message}"
+msgstr ""
+
+#: ../presence/presence-back.action.in.h:1
+msgid "came back"
+msgstr "est revenu(e)"
+
+#: ../presence/presence-back-message.action.in.h:1
+msgid "${buddy-name} came back"
+msgstr "${buddy-name} est revenu(e)"
+
+#: ../presence/presence-idle-back.action.in.h:1
+msgid "is active"
+msgstr "est actif(ve)"
+
+#: ../presence/presence-idle.action.in.h:1
+msgid "is inactive"
+msgstr "est inactif(ve)"
+
+#: ../presence/presence-signed-off.action.in.h:1
+msgid "signed off"
+msgstr "s’est déconnecté(e)"
+
+#: ../presence/presence-signed-on.action.in.h:1
+msgid "signed on"
+msgstr "s’est connecté(e)"
+
+#: ../transfer/transfer.action.in.h:1
+msgid "${file-name}${\\n<message}"
+msgstr ""
+
+#: ../transfer/transfer-complete.action.in.h:1
+msgid "Transfer complete"
+msgstr "Transfert effectué"
+
+#: ../transfer/transfer-error.action.in.h:1
+msgid "Transfer failed"
+msgstr "Le transfert a échoué"

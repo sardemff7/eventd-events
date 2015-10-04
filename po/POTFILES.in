@@ -1,0 +1,14 @@
+[type: gettext/ini]chat/chat.action.in
+[type: gettext/ini]im/im.action.in
+[type: gettext/ini]presence/presence-away.action.in
+[type: gettext/ini]presence/presence-away-message.action.in
+[type: gettext/ini]presence/presence-back.action.in
+[type: gettext/ini]presence/presence-back-message.action.in
+[type: gettext/ini]presence/presence.action.in
+[type: gettext/ini]presence/presence-idle-back.action.in
+[type: gettext/ini]presence/presence-idle.action.in
+[type: gettext/ini]presence/presence-signed-off.action.in
+[type: gettext/ini]presence/presence-signed-on.action.in
+[type: gettext/ini]transfer/transfer.action.in
+[type: gettext/ini]transfer/transfer-complete.action.in
+[type: gettext/ini]transfer/transfer-error.action.in
