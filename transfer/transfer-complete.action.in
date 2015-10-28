@@ -5,7 +5,7 @@
 Extends = transfer.action
 
 [Action]
-Name = presence-back-message
+Name = transfer-complete
 
 [Notification]
 _Title=Transfer complete
