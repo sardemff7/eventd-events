@@ -25,7 +25,7 @@ PKG_CHECK_MODULES([EVENTD], [eventd])
 AC_ARG_WITH([eventdeventdir], AS_HELP_STRING([--with-eventdeventdir=DIR], [Directory for D-Bus session service files]), [], [with_eventdeventdir=yes])
 case "${with_eventdeventdir}" in
     no|"") AC_MSG_ERROR([*** You must define eventdeventdir]) ;;
-    yes) eventdeventdir="`${PKG_CONFIG} --variable=eventdir eventd`" ;;
+    yes) eventdeventdir="`${PKG_CONFIG} --dont-define-prefix --variable=eventdir eventd`" ;;
     *) eventdeventdir="${with_eventdeventdir}" ;;
 esac
 AC_SUBST([eventdeventdir])
