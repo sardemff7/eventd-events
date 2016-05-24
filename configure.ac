@@ -22,7 +22,7 @@ EVENTD_I18N
 
 PKG_CHECK_MODULES([EVENTD], [eventd])
 
-AC_ARG_WITH([eventdeventdir], AS_HELP_STRING([--with-eventdeventdir=DIR], [Directory for D-Bus session service files]), [], [with_eventdeventdir=yes])
+AC_ARG_WITH([eventdeventdir], AS_HELP_STRING([--with-eventdeventdir=DIR], [Directory for eventd event files]), [], [with_eventdeventdir=yes])
 case "${with_eventdeventdir}" in
     no|"") AC_MSG_ERROR([*** You must define eventdeventdir]) ;;
     yes) eventdeventdir="`${PKG_CONFIG} --dont-define-prefix --variable=eventdir eventd`" ;;
