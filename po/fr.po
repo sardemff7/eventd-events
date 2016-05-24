@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eventd 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-25 11:35+0100\n"
+"POT-Creation-Date: 2016-05-24 14:31+0200\n"
 "PO-Revision-Date: 2013-04-26 18:14+0200\n"
 "Last-Translator: Quentin \"Sardem FF7\" Glidic <>\n"
 "Language-Team: French\n"
@@ -18,63 +18,41 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../chat/chat.action.in.h:1
-msgid "[${channel}] ${buddy-name}"
-msgstr ""
+msgid "<b>[${channel}] ${buddy-name}</b>\\n“${message}”"
+msgstr "<b>[${channel}] ${buddy-name}</b>\\n« ${message} »"
 
-#: ../chat/chat.action.in.h:2 ../im/im.action.in.h:2
-msgid "“${message}”"
-msgstr "« ${message} »"
-
-#: ../im/im.action.in.h:1 ../presence/presence.action.in.h:1
-msgid "${buddy-name}"
-msgstr ""
+#: ../im/im.action.in.h:1
+msgid "<b>${buddy-name}</b>\\n“${message}”"
+msgstr "<b>${buddy-name}</b>\\n« ${message} »"
 
 #: ../presence/presence-away.action.in.h:1
-msgid "went away"
-msgstr "est parti(e)"
-
-#: ../presence/presence-away-message.action.in.h:1
-msgid "${buddy-name} went away"
-msgstr "${buddy-name} est parti(e)"
-
-#: ../presence/presence-away-message.action.in.h:2
-#: ../presence/presence-back-message.action.in.h:2
-#: ../presence/presence.action.in.h:2
-msgid "${message}"
-msgstr ""
+msgid "<b>${buddy-name}</b> went away${message/^/\\n}"
+msgstr "<b>${buddy-name}</b> est parti(e)${message/^/\\n}"
 
 #: ../presence/presence-back.action.in.h:1
-msgid "came back"
-msgstr "est revenu(e)"
-
-#: ../presence/presence-back-message.action.in.h:1
-msgid "${buddy-name} came back"
-msgstr "${buddy-name} est revenu(e)"
+msgid "<b>${buddy-name}</b> came back${message/^/\\n}"
+msgstr "<b>${buddy-name}</b> est revenu(e){message/^/\\n}"
 
 #: ../presence/presence-idle-back.action.in.h:1
-msgid "is active"
-msgstr "est actif(ve)"
+msgid "<b>${buddy-name}</b> is active"
+msgstr "<b>${buddy-name}</b> est actif(ve)"
 
 #: ../presence/presence-idle.action.in.h:1
-msgid "is inactive"
-msgstr "est inactif(ve)"
+msgid "<b>${buddy-name}</b> is inactive"
+msgstr "<b>${buddy-name}</b> est inactif(ve)"
 
 #: ../presence/presence-signed-off.action.in.h:1
-msgid "signed off"
-msgstr "s’est déconnecté(e)"
+msgid "<b>${buddy-name}</b> signed off"
+msgstr "<b>${buddy-name}</b> s’est déconnecté(e)"
 
 #: ../presence/presence-signed-on.action.in.h:1
-msgid "signed on"
-msgstr "s’est connecté(e)"
-
-#: ../transfer/transfer.action.in.h:1
-msgid "${file-name}${\\n<message}"
-msgstr ""
+msgid "<b>${buddy-name}</b> signed-on"
+msgstr "<b>${buddy-name}</b> s’est connecté(e)"
 
 #: ../transfer/transfer-complete.action.in.h:1
-msgid "Transfer complete"
-msgstr "Transfert effectué"
+msgid "Transfer complete\\n${file-name}${message/^/\\n}"
+msgstr "Transfert effectué\\n${file-name}${message/^/\\n}"
 
 #: ../transfer/transfer-error.action.in.h:1
-msgid "Transfer failed"
-msgstr "Le transfert a échoué"
+msgid "Transfer failed\\n${file-name}${message/^/\\n}"
+msgstr "Le transfert a échoué\\n${file-name}${message/^/\\n}"

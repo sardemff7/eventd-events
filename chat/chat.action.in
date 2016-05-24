@@ -5,7 +5,6 @@
 Name = chat
 
 [Notification]
-_Title=[${channel}] ${buddy-name}
-_Message=“${message}”
+_Text=<b>[${channel}] ${buddy-name}</b>\n“${message}”
 Image=buddy-icon
 Icon=file:///usr/share/pixmaps/pidgin/protocols/scalable/${protocol-name}.svg

@@ -19,8 +19,9 @@ AC_SUBST([GETTEXT_PACKAGE])
 IT_PROG_INTLTOOL([0.40.0])
 EVENTD_I18N
 
+eventd_min_version=0.12
 
-PKG_CHECK_MODULES([EVENTD], [eventd])
+PKG_CHECK_MODULES([EVENTD], [eventd >= ${eventd_min_version}])
 
 AC_ARG_WITH([eventdeventdir], AS_HELP_STRING([--with-eventdeventdir=DIR], [Directory for eventd event files]), [], [with_eventdeventdir=yes])
 case "${with_eventdeventdir}" in

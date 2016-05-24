@@ -8,4 +8,4 @@ Extends = presence.action
 Name = presence-away
 
 [Notification]
-_Message=went away
+_Text=<b>${buddy-name}</b> went away${message/^/\n}

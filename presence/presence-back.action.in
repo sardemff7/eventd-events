@@ -8,4 +8,4 @@ Extends = presence.action
 Name = presence-back
 
 [Notification]
-_Message=came back
+_Text=<b>${buddy-name}</b> came back${message/^/\n}

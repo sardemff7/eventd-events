@@ -6,13 +6,10 @@ nobase_dist_eventdevent_DATA = \
 	$(null)
 
 nobase_eventdevent_DATA = \
-	%D%/transfer/transfer.action \
 	%D%/transfer/transfer-complete.action \
 	%D%/transfer/transfer-error.action \
 	%D%/presence/presence-away.action \
-	%D%/presence/presence-away-message.action \
 	%D%/presence/presence-back.action \
-	%D%/presence/presence-back-message.action \
 	%D%/presence/presence-idle-back.action \
 	%D%/presence/presence-idle.action \
 	%D%/presence/presence-signed-off.action \

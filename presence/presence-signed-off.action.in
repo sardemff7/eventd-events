@@ -8,4 +8,4 @@ Extends = presence.action
 Name = presence-signed-off
 
 [Notification]
-_Message=signed off
+_Text=<b>${buddy-name}</b> signed off

@@ -10,20 +10,11 @@ Actions = presence-signed-off;
 [Event presence away]
 Actions = presence-away;
 
-[Event presence away message]
-IfData = message;
-Actions = presence-away-message;
-
 [Event presence back]
 Actions = presence-back;
-
-[Event presence back message]
-IfData = message;
-Actions = presence-back-message;
 
 [Event presence idle]
 Actions = presence-idle;
 
-[Event presence idle message]
-IfData = message;
-Actions = presence-idle-message;
+[Event presence idle-back]
+Actions = presence-idle-back;

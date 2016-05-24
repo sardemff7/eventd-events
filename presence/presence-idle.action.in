@@ -8,4 +8,4 @@ Extends = presence.action
 Name = presence-idle
 
 [Notification]
-_Message=is inactive
+_Text=<b>${buddy-name}</b> is inactive
