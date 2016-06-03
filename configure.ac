@@ -19,6 +19,16 @@ AC_SUBST([GETTEXT_PACKAGE])
 IT_PROG_INTLTOOL([0.40.0])
 EVENTD_I18N
 
+AC_CANONICAL_HOST
+case "${host_os}" in
+    mingw*)
+        pkg_config_extra_args="--dont-define-prefix"
+    ;;
+    *)
+        pkg_config_extra_args=
+    ;;
+esac
+
 eventd_min_version=0.12
 
 PKG_CHECK_MODULES([EVENTD], [eventd >= ${eventd_min_version}])
@@ -26,7 +36,7 @@ PKG_CHECK_MODULES([EVENTD], [eventd >= ${eventd_min_version}])
 AC_ARG_WITH([eventdeventdir], AS_HELP_STRING([--with-eventdeventdir=DIR], [Directory for eventd event files]), [], [with_eventdeventdir=yes])
 case "${with_eventdeventdir}" in
     no|"") AC_MSG_ERROR([*** You must define eventdeventdir]) ;;
-    yes) eventdeventdir="`${PKG_CONFIG} --dont-define-prefix --variable=eventdir eventd`" ;;
+    yes) eventdeventdir="`${PKG_CONFIG} ${pkg_config_extra_args} --variable=eventdir eventd`" ;;
     *) eventdeventdir="${with_eventdeventdir}" ;;
 esac
 AC_SUBST([eventdeventdir])
