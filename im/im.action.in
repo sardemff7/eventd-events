@@ -6,5 +6,5 @@ Name = im
 
 [Notification]
 _Text=<b>${buddy-name}</b>\n“${message}”
-Image=buddy-icon
+Image=buddy-avatar
 Icon=file:///usr/share/pixmaps/pidgin/protocols/scalable/${protocol-name}.svg

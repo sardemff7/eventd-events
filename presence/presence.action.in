@@ -5,5 +5,5 @@
 Name = presence
 
 [Notification]
-Image=buddy-icon
+Image=buddy-avatar
 Icon=file:///usr/share/pixmaps/pidgin/protocols/scalable/${protocol-name}.svg
